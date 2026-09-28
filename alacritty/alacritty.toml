@@ -1,0 +1,19 @@
+[window]
+startup_mode = "Fullscreen"
+decorations = "None"
+
+[font]
+normal = { family = "Hack Nerd Font Mono", style = "Regular" }
+bold = { family = "Hack Nerd Font Mono", style = "Bold" }
+italic = { family = "Hack Nerd Font Mono", style = "Italic" }
+bold_italic = { family = "Hack Nerd Font Mono", style = "Bold Italic" }
+offset = { x = 0, y = 1 }
+
+[mouse]
+hide_when_typing = true
+
+[keyboard]
+bindings = [
+    { key = "N", mods = "Control|Shift", action = "CreateNewWindow" },
+]
+
