@@ -1,13 +1,12 @@
 [window]
-startup_mode = "Fullscreen"
 decorations = "None"
 
 [font]
-normal = { family = "Hack Nerd Font Mono", style = "Regular" }
-bold = { family = "Hack Nerd Font Mono", style = "Bold" }
-italic = { family = "Hack Nerd Font Mono", style = "Italic" }
-bold_italic = { family = "Hack Nerd Font Mono", style = "Bold Italic" }
-offset = { x = 0, y = 1 }
+size = 12
+normal = { family = "SauceCodePro Nerd Font Mono", style = "Medium" }
+bold = { family = "SauceCodePro Nerd Font Mono", style = "Bold" }
+italic = { family = "SauceCodePro Nerd Font Mono", style = "Italic" }
+bold_italic = { family = "SauceCodePro Nerd Font Mono", style = "Bold Italic" }
 
 [mouse]
 hide_when_typing = true
@@ -15,5 +14,6 @@ hide_when_typing = true
 [keyboard]
 bindings = [
     { key = "N", mods = "Control|Shift", action = "CreateNewWindow" },
+    { key = "F11", mods = "Control|Shift", action = "ToggleFullscreen" },
 ]
 
