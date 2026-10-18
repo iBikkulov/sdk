@@ -1,4 +1,5 @@
 vim.g.netrw_banner = 0                  -- Disable Netrw banner
+vim.g.netrw_liststyle = 3               -- Tree file listing style
 
 vim.opt.winborder = "rounded"           -- Floating windows appearance
 
@@ -27,8 +28,9 @@ vim.opt.cursorline = true               -- Highlight the cursor line
 vim.opt.laststatus = 3                  -- One common status line
 vim.opt.showmode = false                -- Do not show messages (already in statusline)
 vim.opt.cmdheight = 0                   -- Do not show cmdline by default
+vim.opt.list = true                     -- Show special characters
+vim.opt.listchars = { trail = "·" }     -- Show trailing whitespaces
 
 vim.opt.termguicolors = true            -- Enable 24-bit colors
 
 vim.opt.swapfile = false                -- Disable swap files creation
-

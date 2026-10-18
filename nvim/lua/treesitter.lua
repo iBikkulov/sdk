@@ -7,6 +7,14 @@ local ensure_installed = {
 
 treesitter.install(ensure_installed)
 
+-- prevent neovim from treating .pp as puppet files
+vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+    pattern = "*.pp",
+    callback = function()
+        vim.bo.filetype = "pascal"
+    end,
+})
+
 vim.api.nvim_create_autocmd("FileType", {
     pattern = "*",
     callback = function(args)
