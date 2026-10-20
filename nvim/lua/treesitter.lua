@@ -3,6 +3,7 @@ local treesitter = require("nvim-treesitter")
 local ensure_installed = {
     "pascal",
     "python",
+    "bash",
 }
 
 treesitter.install(ensure_installed)
